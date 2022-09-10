@@ -2,7 +2,7 @@ let countdown;
 let timerDisplay = document.querySelector('.display__time-left');
 let endTime = document.querySelector('.display__end-time');
 let buttons = document.querySelectorAll('[data-time]');
-console.log(buttons);
+
 
 function timer(seconds){
     clearInterval(countdown);
@@ -59,8 +59,8 @@ function displayEndTime(timestamp){
 
 
 function playAudio(){
-    var x = document.getElementById("myAudio"); 
-    x.play(); 
+    let sound = document.getElementById("myAudio"); 
+    sound.play(); 
 }
 
 function startTimer(){
